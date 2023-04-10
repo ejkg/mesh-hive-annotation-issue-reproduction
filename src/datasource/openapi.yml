@@ -1,0 +1,47 @@
+openapi: 3.1.0
+info:
+  title: Reminder API
+  description: API for managing reminders
+  version: 1.0.0
+paths:
+  /reminders:
+    get:
+      summary: Get all reminders
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/definitions/Reminder'
+definitions:
+  Reminder:
+    type: object
+    properties:
+      id:
+        type: integer
+        description: The ID of the reminder
+      title:
+        type: string
+        description: The title of the reminder
+      description:
+        type: string
+        description: The description of the reminder
+      dateTime:
+        type: string
+        format: date-time
+        description: The date and time of the reminder
+      complete:
+        type: boolean
+        description: Whether the reminder is complete or not
+    required:
+      - id
+      - title
+      - complete
+    example:
+      id: 1
+      title: Clean the kitchen
+      description: Do the dishes, put away the food, sweep the floor
+      dateTime: '2023-04-10T19:00:00.000Z'

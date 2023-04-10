@@ -1,0 +1,23 @@
+{
+  "name": "datasource",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./server.js",
+    "mesh:build": "mesh build",
+    "hive:publish": "hive schema:publish ./.mesh/schema.graphql --token $DATASOURCE_HIVE_TOKEN"
+  },
+  "dependencies": {
+    "@graphql-hive/cli": "^0.20.2",
+    "@graphql-mesh/cli": "^0.82.32",
+    "@graphql-mesh/graphql": "^0.34.16",
+    "@graphql-mesh/openapi": "^0.36.0",
+    "lowdb": "^5.1.0",
+    "nodemon": "^2.0.22",
+    "server": "^1.0.38"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "typescript": "^5.0.4"
+  }
+}

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Clean the kitchen",
+        "description": "Do the dishes, put away the food, sweep the floor",
+        "dateTime": "2023-04-10T19:00:00.000Z",
+        "complete": false
+    },
+    {
+        "id": 2,
+        "title": "Clean bathroom",
+        "description": "clean the toilet, shower, vanity, and sweep the floor",
+        "dateTime": null,
+        "complete": false
+    },
+    {
+        "id": 3,
+        "title": "Walk the dog",
+        "description": null,
+        "dateTime": "2023-04-10T20:00:00.000Z",
+        "complete": false
+    },
+    {
+        "id": 4,
+        "title": "Make breakfast",
+        "description": "English Muffin w/ PB&J",
+        "dateTime": "2023-04-10T08:00:00.000Z",
+        "complete": true
+    }
+]
