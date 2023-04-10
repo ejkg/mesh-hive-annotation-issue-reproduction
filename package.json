@@ -1,0 +1,15 @@
+{
+    "name": "mesh-annotated-sdl-issues",
+    "version": "1.0.0",
+    "workspaces": [
+        "./src/datasource",
+        "./src/gateway"
+    ],
+    "scripts": {
+        "build-ds": "pnpm --filter datasource run mesh:build",
+        "publish": "pnpm --filter datasource run hive:publish"
+    },
+    "dependencies": {
+        "dotenv": "^16.0.3"
+    }
+}
