@@ -9,6 +9,7 @@ const db = [...reminders];
 
 // middlewares
 const setRemindersMiddleware = context => { context.reminders = db };
+const logRequest = context => { console.info(context) }
 
 // routes
 /**
@@ -25,7 +26,8 @@ function addReminder(context) {
 }
 
 server({ port: 3000 }, [
-    setDataMiddleware,
-    get("/reminders", context => json(context.data)),
+    setRemindersMiddleware,
+    logRequest,
+    get("/reminders", context => json(context.reminders)),
     post("/reminders", addReminder),
 ])

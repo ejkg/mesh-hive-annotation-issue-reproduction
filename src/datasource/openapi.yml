@@ -16,6 +16,23 @@ paths:
                 type: array
                 items:
                   $ref: '#/definitions/Reminder'
+    post:
+      summary: Get all reminders
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/definitions/ReminderRequest'
+      responses:
+        '201':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/definitions/Reminder'
 definitions:
   Reminder:
     type: object
@@ -45,3 +62,19 @@ definitions:
       title: Clean the kitchen
       description: Do the dishes, put away the food, sweep the floor
       dateTime: '2023-04-10T19:00:00.000Z'
+  ReminderRequest:
+    type: object
+    properties:
+      title:
+        type: string
+        description: The title of the reminder
+      description:
+        type: string
+        description: The description of the reminder
+      dateTime:
+        type: string
+        format: date-time
+        description: The date and time of the reminder
+    required:
+      - title
+

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./server.js",
+    "dev": "nodemon ./server.js",
     "mesh:build": "mesh build",
     "hive:publish": "hive schema:publish ./.mesh/schema.graphql --token $DATASOURCE_HIVE_TOKEN"
   },

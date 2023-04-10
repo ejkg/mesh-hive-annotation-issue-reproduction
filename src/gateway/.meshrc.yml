@@ -7,4 +7,6 @@ sources:
           X-Hive-CDN-Key: hv2ZTE2NjA4ZTAtOWViYy00YmI3LTk5ZWYtYjc0YmMyMjhkZjc1OjI2YTNhYjllZGM0N2ViNGEzMzA1ODNjMGIzMTcyMDRiMWY2NjQxOGI=
         endpoint: "{env.BASE_URL}"
           
-
+plugins:
+  - httpDetailsExtensions:
+      if: "env.DEBUG === '1'"

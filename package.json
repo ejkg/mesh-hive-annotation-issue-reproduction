@@ -7,9 +7,11 @@
     ],
     "scripts": {
         "build-ds": "pnpm --filter datasource run mesh:build",
-        "publish": "pnpm --filter datasource run hive:publish"
+        "publish": "pnpm --filter datasource run hive:publish",
+        "local": "pnpm recursive run dev"
     },
     "dependencies": {
+        "concurrently": "^8.0.1",
         "dotenv": "^16.0.3"
     }
 }
