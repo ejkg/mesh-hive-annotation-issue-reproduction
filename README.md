@@ -1,5 +1,9 @@
 # Mesh Issue Reproduction
 
+## SOLVED!
+
+## Original Issue
+
 Mesh appears to ignore the `@httpOperation` directive when building the fetch request to the data source when it receives an annotated schema from Hive.
 
 For example when we make this query:
