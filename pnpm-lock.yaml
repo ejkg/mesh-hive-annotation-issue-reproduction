@@ -50,6 +50,9 @@ importers:
       '@graphql-mesh/graphql':
         specifier: ^0.34.16
         version: 0.34.16(@graphql-mesh/cross-helpers@0.3.4)(@graphql-mesh/store@0.9.20)(@graphql-mesh/types@0.91.14)(@graphql-mesh/utils@0.43.22)(@graphql-tools/utils@9.2.1)(@types/node@18.15.11)(graphql@16.6.0)(tslib@2.5.0)
+      '@graphql-mesh/openapi':
+        specifier: ^0.36.0
+        version: 0.36.0(@graphql-mesh/cross-helpers@0.3.4)(@graphql-mesh/store@0.9.20)(@graphql-mesh/types@0.91.14)(@graphql-mesh/utils@0.43.22)(@graphql-tools/utils@9.2.1)(graphql@16.6.0)(tslib@2.5.0)
       '@graphql-mesh/plugin-http-details-extensions':
         specifier: ^0.1.21
         version: 0.1.21(@graphql-mesh/types@0.91.14)(@graphql-mesh/utils@0.43.22)(graphql@16.6.0)(tslib@2.5.0)

@@ -1,7 +1,7 @@
 sources:
   - name: Datasource
     handler:
-      graphql:
+      openapi:
         source: https://cdn.graphql-hive.com/artifacts/v1/8aae9d92-78b5-43ad-a6a6-5d7fbb8997c9/sdl?ext=.graphql
         schemaHeaders: 
           X-Hive-CDN-Key: hv2ZTE2NjA4ZTAtOWViYy00YmI3LTk5ZWYtYjc0YmMyMjhkZjc1OjI2YTNhYjllZGM0N2ViNGEzMzA1ODNjMGIzMTcyMDRiMWY2NjQxOGI=
